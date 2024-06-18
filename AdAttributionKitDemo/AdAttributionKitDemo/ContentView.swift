@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import AdAttributionKit
 
 struct ContentView: View {
+    let impression: AppImpression
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +23,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(impression: AppImpression(compactJWS: ""))
 }
